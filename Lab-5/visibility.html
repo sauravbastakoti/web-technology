@@ -1,0 +1,25 @@
+<html>
+<head>
+<title> visibilty of image </title>
+</head>
+<body>
+<img src="download.jpg" height="400px" width="400px" id="pic"><br>
+
+<button onclick="show()">  show/hide  </button>
+
+<script>
+    function show(){
+
+        var img =document.getElementById('pic');
+
+        if(img.style.visibility == "visible"){
+            img.style.visibility = "hidden";
+        }
+        else{
+            img.style.visibility = "visible";
+
+        }
+    }
+    </script>
+    </body>
+    </html>

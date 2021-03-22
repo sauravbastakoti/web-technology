@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stacking</title>
+	<style type="text/css">
+		#logo{
+			position: absolute;
+			margin-top:50px;
+			margin-left: 100px;
+		}
+		#black{
+			position: absolute;
+			
+		}
+	</style>
+</head>
+<body>
+<img src="download1.jpg" id="logo" onclick="change(id)" width="30%" height="30%">
+<img src="download2.png" id="black" onclick="change(id)" width="30%" height="30%">
+<script type="text/javascript">
+	function change(id){
+		if(id=="logo"){
+			document.getElementById("logo").style.zIndex=50;
+			document.getElementById("black").style.zIndex=0;
+		}else{
+			document.getElementById("logo").style.zIndex=0;
+			document.getElementById("black").style.zIndex=50;
+		}
+	}
+</script>
+</body>
+</html>
